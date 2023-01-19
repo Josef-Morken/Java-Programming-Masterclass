@@ -1,19 +1,25 @@
 public class DiagonalStar {
-    public static void printSquareStar (int number){
-
-        if (number < 5){
+     public static void printSquareStar(int number) {
+        if (number < 5) {
             System.out.println("Invalid Value");
-        }
+        } else {
+            // Loop denoting rows
+            for (int i = 0; i < number; i++) {
 
-        for (int i = 0; i < number; i++){
-            for (int j = 0; j < number; j++){
-                if (i == j || i == 0 || j == 0 || i == j -2 || j == i-2 ||
-                i == number -1 || j == number -1 || i + j == number -1)
-                    System.out.print("x");
-                else
-                    System.out.print(" ");
+                // Loop denoting columns
+                for (int j = 0; j < number; j++) {
+
+                    // Checking boundary conditions
+                    // and main diagonal and
+                    // secondary diagonal conditions
+                    if (i == 0 || j == 0 || i == j || i == number - 1 || j == number - 1 || i + j == number - 1) {
+                        System.out.print("*");
+                    } else {
+                        System.out.print(" ");
+                    }
+                }
+                System.out.println();
             }
-            System.out.println(" ");
         }
     }
 }
