@@ -7,7 +7,7 @@
 
 # Java Programming Masterclass Coding Exercises 
 
-_Documenting my solutions to challenge questions as I learn Java._
+_Documenting my solutions to challenge exercises as I learn Java._
 
 
 
